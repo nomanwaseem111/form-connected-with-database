@@ -52,7 +52,7 @@ app.post('/signup', (req, res) => {
                      fname : body.fname,
                      lname : body.lname,
                      email : body.email.toLowerCase(),
-                     fname : hashString
+                     password : hashString
 
                    })
                    newUser.save((err,result) => {
